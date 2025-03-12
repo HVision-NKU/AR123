@@ -13,7 +13,7 @@ If our work is helpful to you or gives you some inspiration, please star this pr
 
 ## 🚩 Todo List
 - [ ] Source code of AR123.
-- [ ] Pretrained weights of 3D reconstruction.
+- [ ] Pretrained weights of AR123.
 - [ ] Rendered Dataset Under the Zero123plus Setting.
 
 
