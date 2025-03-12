@@ -4,7 +4,7 @@
 ![teaser_img](figs/teaser.png)
 <div align="center">
   
-  [[Paper](https://arxiv.org/pdf/2412.16919)] &emsp; [[Project Page](https://zhangxuying1004.github.io/projects/TAR3D/)] &emsp;  [[Jittor Version]()]&emsp; [[Demo]()]   <br>
+  [[Paper](https://zhangxuying1004.github.io/projects/AR123/)] &emsp; [[Project Page](https://zhangxuying1004.github.io/projects/AR123/)] &emsp;  [[Jittor Version]()]&emsp; [[Demo]()]   <br>
 
 </div>
 
