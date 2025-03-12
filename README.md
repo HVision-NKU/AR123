@@ -1,14 +1,20 @@
 # <p align=center> :fire: `AR-1-to-3: Single Image to Consistent 3D Object via Next-View Prediction`</p>
 
 
-![teaser_img](figs/teaser.png)
+![teaser_img](assets/teaser.png)
 <div align="center">
   
   [[Paper](https://zhangxuying1004.github.io/projects/AR123/)] &emsp; [[Project Page](https://zhangxuying1004.github.io/projects/AR123/)] &emsp;  [[Jittor Version]()]&emsp; [[Demo]()]   <br>
 
 </div>
 
+If our work is helpful to you or gives you some inspiration, please star this project and cite our paper. Thank you!
 
+
+## 🚩 Todo List
+- [ ] Source code of AR123.
+- [ ] Pretrained weights of 3D reconstruction.
+- [ ] Rendered Dataset Under the Zero123plus Setting.
 
 
 ## ⚙️ Setup
@@ -38,28 +44,51 @@ pip install -r requirements.txt
 ```
 ### 2. Downloading Datasets
 We provide our rendered [objaverse subset]() under the Zero123++ configuration to facilitate reproducibility and further research.
-
+Please download and place it into `zero123plus_renders`.
 
 
 ### 3. Downloading Checkpoints
+Download [checkpoints]() and put them into `ckpts`.
 
 
 ## ⚡ Quick Start
 
-### 1. Multi-View Synthesis
+### 1. Multi-View Synthesis Based on A Single Image
+``` 
+CUDA_VISIBLE_DEVICES=0 python infer.py --input_path examples/c912d471c4714ca29ed7cf40bc5b1717_0.png --mode nvs
+```
 
-### 2. 3D Generation
+### 2. 3D Generation Based on The Generated Multiple Views 
+
+``` 
+CUDA_VISIBLE_DEVICES=0 python infer.py --config_file configs/reconstruction.yaml --input_path examples/c912d471c4714ca29ed7cf40bc5b1717_0.png --mode mvto3d
+```
+
+### 3. 3D Generation Based on A Single Image
+``` 
+CUDA_VISIBLE_DEVICES=0 python infer.py --config_fileconfigs/reconstruction.yaml --input_path examples/c912d471c4714ca29ed7cf40bc5b1717_0.png --mode ito3d
+```
 
 
 ## 💻 Training
 
+```
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train.py --base configs/ar123.yaml --gpus 0,1,2,3,4,5,6,7 --num_nodes 1
+```
 
 
-
-## 💫 Evaluation
+## 🤖 Evaluation
 ### 1. 2D Evaluation (PSNR, SSIM, Clip-Score, LPIPS)
+Please refer to `eval_2d.py`.
 
 ### 2. 3D Evaluation (Chamfer Distance, F-Score)
+Please refer to `eval_3d.py`.
+
+
+## 📦 Mesh Rendering
+For beginners not familiar with the Blender software, we also provide mesh rendering codes that can run automatically on the cmd.
+Please refer to the [render README](render/RENDER.md) for more details.
+
 
 
 ## 🤗 Acknowledgements
