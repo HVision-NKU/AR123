@@ -21,8 +21,8 @@ If our work is helpful to you or gives you some inspiration, please star this pr
 ### 1. Dependencies and Installation
 We recommend using `Python>=3.10`, `PyTorch>=2.1.0`, and `CUDA>=12.1`.
 ```bash
-conda create --name tar3d python=3.10
-conda activate tar3d
+conda create --name ar123 python=3.10
+conda activate ar123
 pip install -U pip
 
 # Ensure Ninja is installed
@@ -53,20 +53,22 @@ Download [checkpoints]() and put them into `ckpts`.
 
 ## ⚡ Quick Start
 
-### 1. Multi-View Synthesis Based on A Single Image
+### 1. Multi-View Synthesis
+To synthesize multiple new perspective images based on a single-view image, please run:
 ``` 
 CUDA_VISIBLE_DEVICES=0 python infer.py --input_path examples/c912d471c4714ca29ed7cf40bc5b1717_0.png --mode nvs
 ```
 
-### 2. 3D Generation Based on The Generated Multiple Views 
-
+### 2. MV-to-3D Generation 
+To generate 3D asset based on the synthesized multiple new views, please run:
 ``` 
 CUDA_VISIBLE_DEVICES=0 python infer.py --config_file configs/reconstruction.yaml --input_path examples/c912d471c4714ca29ed7cf40bc5b1717_0.png --mode mvto3d
 ```
 
-### 3. 3D Generation Based on A Single Image
+### 3. Image-to-3D Generation
+You can also directly obtain 3D asset based on a single-view image by running:
 ``` 
-CUDA_VISIBLE_DEVICES=0 python infer.py --config_fileconfigs/reconstruction.yaml --input_path examples/c912d471c4714ca29ed7cf40bc5b1717_0.png --mode ito3d
+CUDA_VISIBLE_DEVICES=0 python infer.py --config_file configs/reconstruction.yaml --input_path examples/c912d471c4714ca29ed7cf40bc5b1717_0.png --mode ito3d
 ```
 
 
@@ -97,3 +99,7 @@ We thank the authors of the following projects for their excellent contributions
 
 - [InstantMesh](https://github.com/TencentARC/InstantMesh)
 - [OpenLRM](https://github.com/3DTopia/OpenLRM)
+- [Zero123++](https://github.com/SUDO-AI-3D/zero123plus)
+- [Zero123](https://github.com/cvlab-columbia/zero123)
+
+In addition, we would like to express our sincere thanks to Jiale Xu for his invaluable assistance here.

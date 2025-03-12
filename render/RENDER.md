@@ -9,5 +9,4 @@ We will give detailed usage instructions latter.
 `render_zero123plus.py`
 
 
-## 🤗 Acknowledgements
-We would like to express our sincere thanks to Jiale Xu for his invaluable assistance here.
+
