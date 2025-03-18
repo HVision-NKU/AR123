@@ -4,10 +4,11 @@
 ![teaser_img](assets/teaser.png)
 <div align="center">
   
-  [[Paper](https://zhangxuying1004.github.io/projects/AR123/)] &emsp; [[Project Page](https://zhangxuying1004.github.io/projects/AR123/)] &emsp;  [[Jittor Version]()]&emsp; [[Demo]()]   <br>
+  [[Paper](https://arxiv.org/pdf/2503.12929)] &emsp; [[Project Page](https://zhangxuying1004.github.io/projects/AR123/)] &emsp;  [[Jittor Version]()]&emsp; [[Demo]()]   <br>
 
 </div>
 
+If you have any questions about our work, feel free to contact us via zhangxuying1004@gmail.com.  
 If our work is helpful to you or gives you some inspiration, please star this project and cite our paper. Thank you!
 
 
