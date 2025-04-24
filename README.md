@@ -16,6 +16,7 @@ If our work is helpful to you or gives you some inspiration, please star this pr
 - [x] Source code of AR123.
 - [x] Evaluation code.
 - [x] Training code.
+- [x] Rendering code.
 - [x] Pretrained weights of AR123.
 - [ ] Rendered dataset under the Zero123plus Setting.
 
