@@ -1,11 +1,13 @@
-<!-- # <p align=center> ![teaser_img](assets/logo.png) `AR-1-to-3: Single Image to Consistent 3D Object via Next-View Prediction` :fire:</p> -->
+<p align="center">
+  <img src="assets/logo.png" height=100>
+  
+</p>
+
 
 <div align="center">
-  <img src="assets/logo.png" alt="teaser_img" width="30%">
-  
-  # :fire: `AR-1-to-3: Single Image to Consistent 3D Object via Next-View Prediction` :fire:
-</div>
 
+# 🔥 AR-1-to-3: Single Image to Consistent 3D Object via Next-View Prediction [![Paper page](https://huggingface.co/datasets/huggingface/badges/resolve/main/paper-page-md-dark.svg)]()  
+</div>
 
 ![teaser_img](assets/teaser.png)
 <div align="center">
