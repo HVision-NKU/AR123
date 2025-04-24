@@ -17,4 +17,9 @@ bitsandbytes
 imageio[ffmpeg]
 xatlas
 plyfile
+pyrender
+pyglet
+pyrr
+lpips
+open_clip
 git+https://github.com/NVlabs/nvdiffrast/

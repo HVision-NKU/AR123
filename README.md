@@ -13,9 +13,10 @@ If our work is helpful to you or gives you some inspiration, please star this pr
 
 
 ## 🚩 Todo List
-- [ ] Source code of AR123.
+- [x] Source code of AR123.
+- [x] Evaluation code.
 - [ ] Pretrained weights of AR123.
-- [ ] Rendered Dataset Under the Zero123plus Setting.
+- [ ] Rendered dataset under the Zero123plus Setting.
 
 
 ## ⚙️ Setup
@@ -57,27 +58,36 @@ Download [checkpoints]() and put them into `ckpts`.
 ### 1. Multi-View Synthesis
 To synthesize multiple new perspective images based on a single-view image, please run:
 ``` 
-CUDA_VISIBLE_DEVICES=0 python infer.py --input_path examples/c912d471c4714ca29ed7cf40bc5b1717_0.png --mode nvs
+CUDA_VISIBLE_DEVICES=0 python run.py --base configs/ar123_infer.yaml --input_path examples/c912d471c4714ca29ed7cf40bc5b1717.png --mode itomv
 ```
 
 ### 2. MV-to-3D Generation 
 To generate 3D asset based on the synthesized multiple new views, please run:
 ``` 
-CUDA_VISIBLE_DEVICES=0 python infer.py --config_file configs/reconstruction.yaml --input_path examples/c912d471c4714ca29ed7cf40bc5b1717_0.png --mode mvto3d
+CUDA_VISIBLE_DEVICES=0 python run.py --base configs/ar123_infer.yaml --input_path examples/c912d471c4714ca29ed7cf40bc5b1717.png --mode mvto3d
 ```
 
 ### 3. Image-to-3D Generation
 You can also directly obtain 3D asset based on a single-view image by running:
 ``` 
-CUDA_VISIBLE_DEVICES=0 python infer.py --config_file configs/reconstruction.yaml --input_path examples/c912d471c4714ca29ed7cf40bc5b1717_0.png --mode ito3d
+CUDA_VISIBLE_DEVICES=0 python run.py --base configs/ar123_infer.yaml --input_path examples/c912d471c4714ca29ed7cf40bc5b1717.png --mode ito3d
 ```
 
 
-## 💻 Training
+## 🚀 Training
 
+To train the default model, please run:
+```bash
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train.py \
+    --base configs/ar123_train.yaml \
+    --gpus 0,1,2,3,4,5,6,7 \
+    --num_nodes 1
 ```
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train.py --base configs/ar123.yaml --gpus 0,1,2,3,4,5,6,7 --num_nodes 1
-```
+
+参数说明：
+- `--base`: Path to configuration file
+- `--gpus`: GPU device ID in use
+- `--num_nodes`: Node number in use
 
 
 ## 🤖 Evaluation
