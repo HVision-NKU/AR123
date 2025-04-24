@@ -1,8 +1,9 @@
 <!-- # <p align=center> ![teaser_img](assets/logo.png) `AR-1-to-3: Single Image to Consistent 3D Object via Next-View Prediction` :fire:</p> -->
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
-  <img src="assets/logo.png" alt="Logo" style="height: 12em; vertical-align: middle;">
-  <h1 style="margin: 0; display: inline;">AR-1-to-3: Single Image to Consistent 3D Object Generation via Next-View Prediction</h1>
+<div align="center">
+  <img src="assets/logo.png" alt="teaser_img" width="30%">
+  
+  # :fire: `AR-1-to-3: Single Image to Consistent 3D Object via Next-View Prediction` :fire:
 </div>
 
 
