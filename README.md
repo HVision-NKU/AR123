@@ -1,4 +1,4 @@
-# <p align=center> :fire: `AR-1-to-3: Single Image to Consistent 3D Object via Next-View Prediction`</p>
+# <p align=center> :fire: `AR-1-to-3: Single Image to Consistent 3D Object via Next-View Prediction` :fire:</p>
 
 
 ![teaser_img](assets/teaser.png)
@@ -15,7 +15,8 @@ If our work is helpful to you or gives you some inspiration, please star this pr
 ## 🚩 Todo List
 - [x] Source code of AR123.
 - [x] Evaluation code.
-- [ ] Pretrained weights of AR123.
+- [x] Training code.
+- [x] Pretrained weights of AR123.
 - [ ] Rendered dataset under the Zero123plus Setting.
 
 
