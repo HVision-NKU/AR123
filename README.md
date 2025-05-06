@@ -60,7 +60,7 @@ Please download and place it into `zero123plus_renders`.
 
 
 ### 3. Downloading Checkpoints
-Download [checkpoints]() and put them into `ckpts`.
+Download [checkpoints](https://huggingface.co/zhangxuying1004/AR-1-to-3/) and put them into `ckpts`.
 
 
 ## ⚡ Quick Start
