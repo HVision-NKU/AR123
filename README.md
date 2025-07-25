@@ -124,3 +124,15 @@ We thank the authors of the following projects for their excellent contributions
 - [Zero123](https://github.com/cvlab-columbia/zero123)
 
 In addition, we would like to express our sincere thanks to Jiale Xu for his invaluable assistance here.
+
+## :books: BibTeX
+If you find AR-1-to-3 useful for your research and applications, please cite using this BibTeX:
+
+```BibTeX
+@inproceedings{zhang2025ar123,
+  title={Ar-1-to-3: Single image to consistent 3d object generation via next-view prediction},
+  author={Zhang, Xuying and Zhou, Yupeng and Wang, Kai and Wang, Yikai and Jiao, Shaohui and Zhou, Daquan and Hou, Qibin and Cheng, Ming-Ming},
+  booktitle={Proceedings of IEEE International Conference on Computer Vision},
+  year={2025}
+}
+```
