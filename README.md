@@ -16,9 +16,6 @@
 
 </div>
 
-If you have any questions about our work, feel free to contact us via zhangxuying1004@gmail.com.  
-If our work is helpful to you or gives you some inspiration, please star this project and cite our paper. Thank you!
-
 
 ## 🚩 Todo List
 - [x] Source code of AR123.
@@ -27,6 +24,21 @@ If our work is helpful to you or gives you some inspiration, please star this pr
 - [x] Rendering code.
 - [x] Pretrained weights of AR123.
 - [ ] Rendered dataset under the Zero123plus Setting.
+
+## :books: BibTeX
+
+If you have any questions about our AR-1-to-3, feel free to contact us via zhangxuying1004@gmail.com.  
+If our work is helpful to you or gives you some inspiration, please star this project and cite our paper. Thank you!
+
+```BibTeX
+@inproceedings{zhang2025ar123,
+  title={Ar-1-to-3: Single image to consistent 3d object generation via next-view prediction},
+  author={Zhang, Xuying and Zhou, Yupeng and Wang, Kai and Wang, Yikai and Jiao, Shaohui and Zhou, Daquan and Hou, Qibin and Cheng, Ming-Ming},
+  booktitle={Proceedings of IEEE International Conference on Computer Vision},
+  year={2025}
+}
+```
+
 
 
 ## ⚙️ Setup
@@ -57,6 +69,10 @@ pip install -r requirements.txt
 ### 2. Downloading Datasets
 We provide our rendered [objaverse subset]() under the Zero123++ configuration to facilitate reproducibility and further research.
 Please download and place it into `zero123plus_renders`.
+
+😃😃😃 We render and assemble this dataset based on the Blender software. 
+For the beginners not familiar with Blender, we also provide mesh rendering codes that can run automatically on the cmd.
+Please refer to the [render README](render/RENDER.md) for more details.
 
 
 ### 3. Downloading Checkpoints
@@ -108,9 +124,7 @@ Please refer to `eval_2d.py`.
 Please refer to `eval_3d.py`.
 
 
-## 📦 Mesh Rendering
-For beginners not familiar with the Blender software, we also provide mesh rendering codes that can run automatically on the cmd.
-Please refer to the [render README](render/RENDER.md) for more details.
+
 
 
 
@@ -125,14 +139,4 @@ We thank the authors of the following projects for their excellent contributions
 
 In addition, we would like to express our sincere thanks to Jiale Xu for his invaluable assistance here.
 
-## :books: BibTeX
-If you find AR-1-to-3 useful for your research and applications, please cite using this BibTeX:
 
-```BibTeX
-@inproceedings{zhang2025ar123,
-  title={Ar-1-to-3: Single image to consistent 3d object generation via next-view prediction},
-  author={Zhang, Xuying and Zhou, Yupeng and Wang, Kai and Wang, Yikai and Jiao, Shaohui and Zhou, Daquan and Hou, Qibin and Cheng, Ming-Ming},
-  booktitle={Proceedings of IEEE International Conference on Computer Vision},
-  year={2025}
-}
-```
