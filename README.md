@@ -31,15 +31,14 @@ If you have any questions about our AR-1-to-3, feel free to contact us via zhang
 If our work is helpful to you or gives you some inspiration, please star this project and cite our paper. Thank you!
 
 ```BibTeX
-@inproceedings{zhang2025ar123,
-  title={Ar-1-to-3: Single image to consistent 3d object generation via next-view prediction},
-  author={Zhang, Xuying and Zhou, Yupeng and Wang, Kai and Wang, Yikai and Jiao, Shaohui and Zhou, Daquan and Hou, Qibin and Cheng, Ming-Ming},
-  booktitle={Proceedings of IEEE International Conference on Computer Vision},
+@inproceedings{zhang2025ar,
+  title={AR-1-to-3: Single Image to Consistent 3D Object via Next-View Prediction},
+  author={Zhang, Xuying and Zhou, Yupeng and Wang, Kai and Wang, Yikai and Li, Zhen and Jiao, Shaohui and Zhou, Daquan and Hou, Qibin and Cheng, Ming-Ming},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={26273--26283},
   year={2025}
 }
 ```
-
-
 
 ## ⚙️ Setup
 ### 1. Dependencies and Installation
